@@ -1,4 +1,5 @@
-# Byte-compiled / optimized / DLL files
+search_Amazon.py
+.gitignore
 __pycache__/
 *.py[cod]
 *$py.class
@@ -94,3 +95,4 @@ app_binaries/
 
 # Screenshots
 *.png
+/Amazon_search_script.py
