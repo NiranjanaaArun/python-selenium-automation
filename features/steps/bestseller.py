@@ -11,6 +11,6 @@ def bestseller_page(context):
 def verify_links(context, expected_link_count):
     expected_link_count = int(expected_link_count)
     links = context.driver.find_elements (*number_links)
-    assert len(links) == expected_link_count, f'Expected {expected_link_count} but got {len(links)}'
+    assert len(links) == expected_link_count, f'Expected {expected_link_count}'
 
-    print (f'Expected{expected_link_count} but got {len(links)}')
+    print('total_link:', links)
