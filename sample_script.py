@@ -1,11 +1,13 @@
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+#from selenium.webdriver.support.wait import WebDriverWait
+#from selenium.webdriver.support import expected_conditions as EC
 
 # init driver
-driver = webdriver.Chrome(executable_path='C:/automation/python-selenium-automation/chromedriver.exe')
+s=Service('C:\Program Files\Automation\chromedriver.exe')
+driver = webdriver.Chrome(service=s)
 driver.maximize_window()
 
 # open the url
@@ -19,7 +21,7 @@ search.send_keys('Dress')
 sleep(4)
 
 # click search
-driver.find_element(By.ID, 'btnK').click()
+driver.find_element(By.NAME, 'btnK').click()
 
 # verify
 # wait for 4 sec
