@@ -2,7 +2,5 @@
 Feature: Verify different colors in a product
 
   Scenario: Verify different colors in a product on Amazon page
-    Given Open Amazon page
-    When search for pink dress for woman
-    And click on Harpa skater dress
+    Given Opens Amazon product page B081YS2F7N
     Then verify all the colors are clickable
